@@ -22,4 +22,4 @@ jobs:
             cd MIJIworld_backend
             git pull
             npm run build
-            npm reload
+            npm run reload
