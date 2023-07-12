@@ -9,7 +9,12 @@ const port = process.env.PORT || 5500;
 
 const routers = require("./routes/index");
 
-app.use(cors());
+const corsOption = {
+  origin: "http://localhost:5500",
+  credentials: true,
+};
+
+app.use(cors(corsOption));
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Server is ready!");
