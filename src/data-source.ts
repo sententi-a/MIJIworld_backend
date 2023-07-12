@@ -1,5 +1,6 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
+import { Entities } from "./entity";
 
 // Use env variable
 require("dotenv").config();
@@ -15,7 +16,8 @@ export const AppDataSource = new DataSource({
   database: "MIJIworld",
   synchronize: false,
   logging: true,
-  entities: ["src/entity/*.{ts, js}"],
+  // entities: ["src/entity/*.{ts, js}"],
+  entities: Entities,
   // entities: [__dirname + "/entity/*.js"],
   migrations: ["src/migration/*"],
   subscribers: [],
