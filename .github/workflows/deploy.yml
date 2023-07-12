@@ -1,0 +1,25 @@
+name: MIJIworld-server-auto-deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  AUTO-DEPLOY:
+    name: Deploy
+    runs-on: ubuntu
+    steps:
+      - name: Access to EC2
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USERNAME}}
+          password: ${{secrets.PASSWORD}}
+          port: ${{secrets.PORT}}
+          script: |
+            cd MIJIworld_backend
+            git pull
+            npm run build
+            npm reload
