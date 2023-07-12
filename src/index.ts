@@ -10,7 +10,7 @@ const port = process.env.PORT || 5500;
 const routers = require("./routes/index");
 
 const corsOption = {
-  origin: "http://localhost:5500",
+  origin: process.env.CLIENT || "http://localhost:3000",
   credentials: true,
 };
 
