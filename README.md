@@ -16,6 +16,8 @@
 
 <a href="https://mijiworld.netlify.app/" target="_blank">🌐 미지의 세계</a>
 
+<a href="https://github.com/sententi-a/MIJIworld_frontend" target="_blank">🐥 프론트엔드 Repository</a>
+
 <a href="https://main--64aed0decab78ed7a0c4a7ea.chromatic.com/" target="_blank">🎀 스토리북</a>
 
 <a href="https://documenter.getpostman.com/view/28520344/2s946eADqE" target="_blank">💬 POSTMAN API 문서</a>
@@ -80,10 +82,13 @@
 <div style="display:flex; gap:0.5px; justify-content: center">
 <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
 <img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white">
-</div>
-<div style="display:flex; gap:0.5px; justify-content:center">
 <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 <img src="https://img.shields.io/badge/typeorm-F0AD3C?style=for-the-badge&logo=typeorm&logoColor=white">
+</div>
+<div style="display:flex; gap:0.5px; justify-content:center">
+<img src="https://img.shields.io/badge/aws ec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white">
+<img src="https://img.shields.io/badge/pm2-2B037A?style=for-the-badge&logo=pm2&logoColor=white">
+<img src="https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white">
 </div>
 </div>
 <br>
