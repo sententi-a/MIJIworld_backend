@@ -17,6 +17,11 @@ const corsOption = {
   credentials: true,
 };
 
+// Connect to mysql DB
+AppDataSource.initialize().then(() => {
+  console.log("***** DB connection success *****");
+});
+
 app.use(cors(corsOption));
 
 app.get("/", (req: Request, res: Response) => {
@@ -26,10 +31,6 @@ app.get("/", (req: Request, res: Response) => {
 app.use("/", routers);
 
 app.listen(port, () => {
+  process.send("ready"); // 구동 준비가 완료되면 마스터 프로세스로 ready 요청 보냄
   console.log(`***** Server is listening at localhost:${port} *****`);
-});
-
-// Connect to mysql DB
-AppDataSource.initialize().then(() => {
-  console.log("***** DB connection success *****");
 });
